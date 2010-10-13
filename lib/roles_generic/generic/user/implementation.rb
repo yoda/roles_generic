@@ -10,6 +10,7 @@ module Roles::Generic::User
     def has_roles?(*roles)
       # if roles list request is empty and roles_list is empty then there is no roles
       # hence x.has_roles? question
+      puts "Is it even firing this"
       if roles.flatten.empty? && roles_list.empty?
         return false
       else
