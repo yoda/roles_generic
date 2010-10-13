@@ -8,13 +8,7 @@ module Roles::Generic::User
     # if a list of roles: check if ALL of the given roles have been assigned 
     # If the parameter is empty return false
     def has_roles?(*roles)
-      # if roles list request is empty and roles_list is empty then there is no roles
-      # hence x.has_roles? question
-      if roles.flatten.empty?
-        return roles_list.empty?
-      else
         (roles_list - roles.flatten).empty? 
-      end
     end
 
     # check if any (at least ONE) of the given roles have been assigned
