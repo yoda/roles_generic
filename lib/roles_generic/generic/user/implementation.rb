@@ -6,8 +6,9 @@ module Roles::Generic::User
 
     # check if a given role has been assigned 
     # if a list of roles: check if ALL of the given roles have been assigned 
+    # If the parameter is empty return false
     def has_roles?(*roles)
-      (roles_list - roles.flatten).empty?      
+        (roles_list - roles.flatten).empty? && !roles_list.empty?     
     end
 
     # check if any (at least ONE) of the given roles have been assigned
