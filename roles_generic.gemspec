@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup"]
-  s.date = %q{2010-09-23}
+  s.date = %q{2010-11-01}
   s.description = %q{Generic role strategies sharing the same API. Easy to insert in any model}
   s.email = %q{kmandrup@gmail.com}
   s.extra_rdoc_files = [
@@ -103,14 +103,14 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<require_all>, ["~> 1.2.0"])
       s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
       s.add_runtime_dependency(%q<sugar-high>, ["~> 0.2.10"])
-      s.add_runtime_dependency(%q<rails3_artifactor>, ["~> 0.2.5"])
+      s.add_runtime_dependency(%q<rails3_artifactor>, [">= 0.2.5"])
     else
       s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.22"])
       s.add_dependency(%q<generator-spec>, ["~> 0.6.5"])
       s.add_dependency(%q<require_all>, ["~> 1.2.0"])
       s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
       s.add_dependency(%q<sugar-high>, ["~> 0.2.10"])
-      s.add_dependency(%q<rails3_artifactor>, ["~> 0.2.5"])
+      s.add_dependency(%q<rails3_artifactor>, [">= 0.2.5"])
     end
   else
     s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.22"])
@@ -118,7 +118,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<require_all>, ["~> 1.2.0"])
     s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
     s.add_dependency(%q<sugar-high>, ["~> 0.2.10"])
-    s.add_dependency(%q<rails3_artifactor>, ["~> 0.2.5"])
+    s.add_dependency(%q<rails3_artifactor>, [">= 0.2.5"])
   end
 end
 
